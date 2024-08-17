@@ -29,7 +29,7 @@
 
 				vPosition = position;
 				vColor = color;
-
+				
 				gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
 
 			}
@@ -49,7 +49,7 @@
 			void main()	{
 
 				vec4 color = vec4( vColor );
-
+				color.r = 255;
 				gl_FragColor = color;
 
 			}
